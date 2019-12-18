@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    
+    <body>
+        <div id="section-clothes-shop">
+            <h1 id="text-clothes-shop">Clothes Shop</h1>
+            <table>
+                <!-- Cloth item in the head -->
+                <tr>
+                    <td><img id="btn-previous-head" onclick="previousitem()" class="btn-arrow btn-arrow-left" src="./images/arrow-left.png"/></td>
+                    <td><img id="item-head" class="img-item" src="images/head-0.png" /></td>
+                    <td><img id="btn-next-head" onclick="nextitem()" class="btn-arrow btn-arrow-right" src="./images/arrow-right.png"/></td>
+                </tr>
+                <!-- Cloth item in the body -->
+                <tr>
+                    <td><img id="btn-previous-body" onclick="previousitem2()" class="btn-arrow btn-arrow-left" src="./images/arrow-left.png"/></td>
+                    <td><img id="item-body" class="img-item" src="images/body-0.png" /></td>
+                    <td><img id="btn-next-body" onclick="nextitem2()" class="btn-arrow btn-arrow-right" src="./images/arrow-right.png"/></td>
+                </tr>
+                <!-- Cloth item in the legs -->
+                <tr>
+                    <td><img id="btn-previous-legs" onclick="previousitem3()" class="btn-arrow btn-arrow-left" src="./images/arrow-left.png"/></td>
+                    <td><img id="item-legs" class="img-item" src="images/legs-0.png" /></td>
+                    <td><img id="btn-next-legs" onclick="nextitem3()" class="btn-arrow btn-arrow-right" src="./images/arrow-right.png"/></td>
+                </tr>                
+            </table>
+            <button id="btn-randomize" onclick="Random1()">Randomize</button>
+        </div>
+        
+        <script>
+        
+        // These are the max amount of items per section (don't change it! just use it).
+        const itemsCountHead = 4;
+        const itemsCountBody = 9;
+        const itemsCountLegs = 10;
+        
+        // These ones will hold the current item per section.
+        var currentItemHead = 0;
+        var currentItemBody = 0;
+        var currentItemLegs = 0;
+
+        var head = document.getElementById("item-head")
+        var body = document.getElementById("item-body")
+        var body = document.getElementById("item-legs")
+
+        function nextitem() {
+            if (currentItemHead < itemsCountHead - 1) {
+                currentItemHead++;
+            } else {
+                currentItemHead = 0;
+            }
+            document.getElementById("item-head").src = "./images/head-" + currentItemHead + ".png";
+        }
+
+        function nextitem2() {
+            if (currentItemBody < itemsCountBody - 1) {
+                currentItemBody++;
+            } else {
+                currentItemBody = 0;
+            }
+            document.getElementById("item-body").src = "./images/body-" + currentItemBody + ".png";
+        }
+
+        function nextitem3() {
+            if (currentItemLegs < itemsCountLegs - 1) {
+                currentItemLegs++;
+            } else {
+                currentItemLegs = 0;
+            }
+            document.getElementById("item-legs").src = "./images/legs-" + currentItemLegs + ".png";
+        }        
+
+        function previousitem() {
+            if (currentItemHead == 0) {
+                currentItemHead = itemsCountHead - 1;
+            } else {
+                currentItemHead--;
+            }
+            document.getElementById("item-head").src = "./images/head-" + currentItemHead + ".png";
+        }
+
+        function previousitem2() {
+            if (currentItemBody == 0) {
+                currentItemBody = itemsCountBody -1;
+            } else {
+                currentItemBody--;
+            }
+            document.getElementById("item-body").src = "./images/body-" + currentItemBody + ".png";
+        }
+
+        function previousitem3() {
+            if (currentItemLegs == 0) {
+                currentItemLegs = itemsCountLegs -1;
+            } else {
+                currentItemLegs--;
+            }
+            document.getElementById("item-legs").src = "./images/legs-" + currentItemLegs + ".png";
+        }
+
+        function Random1() {
+            var maxHead = 4;
+            var maxBody = 9;
+            var maxLegs = 10;
+
+            currentItemHead= Math.floor(Math.random() * maxHead);
+                document.getElementById("item-head").src = "./images/head-" + currentItemHead + ".png";
+            currentItemBody= Math.floor(Math.random() * maxBody);
+                document.getElementById("item-body").src = "./images/body-" + currentItemBody + ".png";
+            currentItemLegs=  Math.floor(Math.random() * maxLegs);
+                document.getElementById("item-legs").src = "./images/legs-" + currentItemLegs + ".png";
+        }
+
+        // Define your functions to update cloth items per section.
+            
+        // Remember that document.getElementById("some-id").src = "./some-folder/some-file-name.png" can change the source image;
+            
+        // Remember that you can create a string appending two other ones.
+        // var index = 0;
+        // var filename = "something-" + index + ".png";
+        
+        </script>
+    </body>
+</html>
