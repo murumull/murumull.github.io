@@ -84,3 +84,25 @@ br {
 hr {
 	width: 0%;
 }
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+	width: 250px;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+.caption {
+	display: block;
+	font-size: 24px;
+	font-family: 'Oswald';
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
