@@ -1,0 +1,113 @@
+h1, h2, p, table, th, td, button { 
+	font-family: 'Oswald'
+  }
+
+
+p, td, th {
+	font-size: 24px
+}
+
+
+td {
+	border: 2px solid black;
+}
+
+
+th {
+	border: 2px solid black;
+}
+
+
+table, th {
+	border-collapse: collapse;
+}
+
+
+#title {
+	font-size:50px ;
+	background-color: #c2f7ff;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+#yeet {
+	font-size:40px ;
+}
+
+body {
+	text-align: center;
+}
+
+a, a:active {
+	color:black;
+	text-decoration: none;
+}
+
+#prototype {
+	background-color: #c2f7ff;
+	color: black;
+	width: 25%;
+	font-size: 50px;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+#something {
+	background-color: #c2f7ff;
+	color: black;
+	width: 10%;
+	font-size: 24px;
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+body {
+	display: block;
+	margin-left: 50px;
+	margin-right: 50px;
+}	
+
+br {
+	color: white;
+}
+
+#monke {
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+#mockups {
+	border: 2px solid black;
+	border-radius: 15px;
+}
+
+hr {
+	width: 0%;
+}
+
+div.item {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+	width: 250px;
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+.caption {
+	display: block;
+	font-size: 24px;
+	font-family: 'Oswald';
+	margin-left: 70px;
+	margin-right: 70px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+#figma {
+	width: 200px;
+	height: 400px;
+}
