@@ -1,0 +1,111 @@
+canvas.drawing, canvas.drawingBuffer {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+* {
+  font-family: Oswald;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#btn {
+  padding: 0.5em 1em;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+  font-size: 1em;
+}
+
+#wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#scanner-container {
+	position: relative;
+}
+
+body {
+  background: var(--background);
+  color: var(--color);  
+}
+
+#detect-block {
+  display: flex;
+  justify-content: center;
+	align-items: center;
+  margin: auto;
+  background-color: black;
+  color: white;
+  padding: 0.5em;
+  border-radius: 0.5em;
+	flex-direction: column;
+}
+
+ img {
+	max-width: 100%;
+	height: auto;
+}
+
+.container {
+	width: 960px;
+	max-width: 100%;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+.main-header .container {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+#authentication {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#app {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+}
+
+.content {
+  width: 100%;
+  max-width: 250px;
+  display: flex;  
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.content button {
+  width: 50%;
+  align-self: center;
+  background-color: black;
+  color: white;
+  border: black;
+  border-radius: 0.5em;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 1em;  
+}
+
+.logo {
+  font-family: 'Oswald';
+  font-size: 3em;
+  align-self: center;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ScanShop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div id="authentication">
+    <div class="content">
+        <h1 class="logo">ScanShop</h1>
+        <p>Email</p>
+        <input id="email" placeholder="Your email" autocomplete="off"></input>
+        <p>Password</p>
+        <input id="password" placeholder="Your password" type="password"></input>
+        <p></p>
+        <button onclick="signup();">Sign Up</button>
+        <button onclick="login();">Login</button>
+        <p id="feedback"></p>
+    </div>
+  </div>
+  
+  <div id="app">
+    <div>
+      <header class="main-header">
+        <div class="container">
+          <h1 class="mh-logo">
+            <img src="assets/untitled_(7).png" width="200" height="200">
+          </h1>
+        </div>
+      </header>
+        <!-- Div to show the scanner -->
+          <div id="wrapper">
+            <div id="scanner-container"></div>
+          </div>
+          <div id="wrapper">
+            <input type="button" id="btn" value="Start/Stop the scanner" />
+          </div>
+          <div id="wrapper">
+            <div id="detect-block"></div>
+          </div>
+    </div>        
+  </div>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+				https://firebase.google.com/docs/web/setup#available-libraries -->
+		<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-auth.js"></script>
+    <!-- Include the image-diff library -->
+    <script src="https://cdn.rawgit.com/serratus/quaggaJS/0420d5e0/dist/quagga.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
